@@ -31,6 +31,8 @@ def traiter_fichier(chemin_fichier):
             print(resultat)
 
         # Créer le dossier de destination s'il n'existe pas
+        #dossier_destination = "../../RESULTS/MAE after training/Reverse_TestMultiYPRED"
+        
         dossier_destination = "/Users/admin-21760/Desktop/M2/Computational Systems and Structural Biology/Bioinformatics of RNA and non-coding world/RNA_angles/RNA-project-angles/data/Reverse_TestMultiYPRED"
         if not os.path.exists(dossier_destination):
             os.makedirs(dossier_destination)
@@ -52,6 +54,8 @@ def traiter_fichier(chemin_fichier):
 
 if __name__ == "__main__":
     # Dossier contenant les fichiers à traiter
+    #dossier_a_traiter = "../../RESULTS/Y_pred_multi"
+    
     dossier_a_traiter = "/Users/admin-21760/Desktop/M2/Computational Systems and Structural Biology/Bioinformatics of RNA and non-coding world/RNA_angles/RNA-project-angles/data/Y_pred_multi"
 
     # Liste des fichiers dans le dossier
