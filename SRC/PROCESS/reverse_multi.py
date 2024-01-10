@@ -29,6 +29,8 @@ def traiter_fichier(chemin_fichier):
         print(f"Résultats pour le fichier {chemin_fichier}:")
         for resultat in resultats_padded:
             print(resultat)
+        #dossier_destination = "../../RESULTS/MAE before training/Reverse_TestMulti"
+        
         dossier_destination = "/Users/admin-21760/Desktop/M2/Computational Systems and Structural Biology/Bioinformatics of RNA and non-coding world/RNA_angles/RNA-project-angles/data/Reverse_TestMulti"
         if not os.path.exists(dossier_destination):
             os.makedirs(dossier_destination)
@@ -47,6 +49,8 @@ def traiter_fichier(chemin_fichier):
         print(f"Une erreur s'est produite : {e}")
 
 if __name__ == "__main__":
+    #dossier_a_traiter = "../../DATA MODIFIED/TrueAngles_TestMULTI"
+    
     dossier_a_traiter = "/Users/admin-21760/Desktop/M2/Computational Systems and Structural Biology/Bioinformatics of RNA and non-coding world/RNA_angles/RNA-project-angles/data/TrueAngles_TestMULTI"
     fichiers_du_dossier = os.listdir(dossier_a_traiter)
     fichiers_texte = [fichier for fichier in fichiers_du_dossier if fichier.endswith(".txt")]
