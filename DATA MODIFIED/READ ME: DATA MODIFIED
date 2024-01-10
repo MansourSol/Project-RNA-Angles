@@ -8,14 +8,14 @@ READ ME: DATA MODIFIED
 
 - Alpha_valuesTrain: Folder containing files with only the angle values ​​for each ARN in the train set.
 
--OneHotMatrices_OutputTest: Folder containing the one hot encoded matrices for the test set.
+- OneHotMatrices_OutputTest: Folder containing the one hot encoded matrices for the test set.
 
--OneHotMatrices_OutputTrain: Folder containing the one hot encoded matrices for the train set.
+- OneHotMatrices_OutputTrain: Folder containing the one hot encoded matrices for the train set.
 
--TrueAngles_TestBINAIRE: Predictions of alpha values ​​for the test set for binary classification.
+- TrueAngles_TestBINAIRE: Predictions of alpha values ​​for the test set for binary classification.
 
--TrueAngles_TrainBINAIRE: Predictions of alpha values ​​for the train set for binary classification.
+- TrueAngles_TrainBINAIRE: Predictions of alpha values ​​for the train set for binary classification.
 
--TrueAngles_TestMULTI: Predictions of alpha values ​​for the test set for multiple classification.
+- TrueAngles_TestMULTI: Predictions of alpha values ​​for the test set for multiple classification.
 
--TrueAngles_TrainMULTI: Predictions of alpha values ​​for the train set for multiple classification.
+- TrueAngles_TrainMULTI: Predictions of alpha values ​​for the train set for multiple classification.
