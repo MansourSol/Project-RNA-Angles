@@ -1,0 +1,18 @@
+all_test_predictions = np.concatenate(all_test_predictions)
+all_test_labels = np.concatenate(all_test_labels)
+overall_test_accuracy = accuracy_score(all_test_labels, all_test_predictions)
+print(f"Overall Test Accuracy: {overall_test_accuracy}")
+
+plt.plot(train_loss, label='Training Loss')
+plt.xlabel('Iterations')
+plt.ylabel('Loss')
+plt.legend()
+plt.show()
+
+plt.plot(np.mean(train_accuracy_history, axis=0), label='Training Accuracy')
+plt.plot(np.mean(val_accuracy_history, axis=0), label='Validation Accuracy')
+plt.plot(np.mean(test_accuracy_history, axis=0), label='Test Accuracy')
+plt.xlabel('Epochs')
+plt.ylabel('Accuracy')
+plt.legend()
+plt.show()
