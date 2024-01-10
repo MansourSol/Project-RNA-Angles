@@ -11,13 +11,10 @@ MAE before training: (6 subfolders)
   - Reverse_TrainBinaire: Here, we have the angle value obtained through the binary classification for all train files.
   - Reverse_TrainMulti: Here, we have the angle value obtained through the multiclassification for all train files.
 
+PREDICTION_SAMPLE: (1 subfolder) Here we have the example of a sequence with the predicted binary classes
+  - Reverse_TestBinaireExample: Here, we have the angle value obtained through the binary classification for the example
 
-PREDICTION_SAMPLE: (1 subfolder)
-  - Reverse_TestBinaireExample
+Y_pred_binary: Here, can be found the predicted binary classes for all the test files.
 
-  example_pred.txt
-
-Y_pred_binary:
-
-Y_pred_multi:
+Y_pred_multi: Here, can be found the predicted multi classes for all the test files.
 
