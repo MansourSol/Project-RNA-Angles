@@ -14,6 +14,9 @@ def sequence_to_one_hot(sequence, max_length):
 
     return one_hot_matrix
 
+#example_folder_path = "../../DATA/sample"
+#output_folder_path = "../../DATA/sample/OneHotMatrices_OutputExample"   Est ce qu'on conserve Exemple...
+
 example_folder_path = "/Users/admin-21760/Desktop/M2/Computational Systems and Structural Biology/Bioinformatics of RNA and non-coding world/RNA_angles/RNA-project-angles/data/sample"
 output_folder_path = "/Users/admin-21760/Desktop/M2/Computational Systems and Structural Biology/Bioinformatics of RNA and non-coding world/RNA_angles/RNA-project-angles/data/sample/OneHotMatrices_OutputExample"
 
@@ -44,7 +47,7 @@ for filename in os.listdir(example_folder_path):
 
             print(f"Matrice one-hot encodée pour {filename} enregistrée dans {output_filepath}")
 
-
+#output_folder_path = "../../DATA/sample/OneHotMatrices_OutputExample"
 output_folder_path = "/Users/admin-21760/Desktop/M2/Computational Systems and Structural Biology/Bioinformatics of RNA and non-coding world/RNA_angles/RNA-project-angles/data/sample/OneHotMatrices_OutputExample"
 for filename in os.listdir(output_folder_path):
     if filename.endswith("_one_hot_matrix.npy"):
