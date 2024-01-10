@@ -6,15 +6,16 @@ from sklearn.neural_network import MLPClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 from sklearn.preprocessing import StandardScaler
-#train_data_folder = "../../DATA MODIFIED/OneHotMatrices_OutputTrain/"
-#test_data_folder = "../../DATA MODIFIED/OneHotMatrices_OutputTest/"
-#train_labels_folder = "../../DATA MODIFIED/TrueAngles_TrainBINAIRE/"
-#test_labels_folder = "../../DATA MODIFIED/TrueAngles_TestBINAIRE/"
 
-train_data_folder = "/Users/admin-21760/Desktop/M2/Computational Systems and Structural Biology/Bioinformatics of RNA and non-coding world/RNA_angles/RNA-project-angles/data/OneHotMatrices_OutputTrain/"
-test_data_folder = "/Users/admin-21760/Desktop/M2/Computational Systems and Structural Biology/Bioinformatics of RNA and non-coding world/RNA_angles/RNA-project-angles/data/OneHotMatrices_OutputTest/"
-train_labels_folder = "/Users/admin-21760/Desktop/M2/Computational Systems and Structural Biology/Bioinformatics of RNA and non-coding world/RNA_angles/RNA-project-angles/data/TrueAngles_TrainBINAIRE/"
-test_labels_folder = "/Users/admin-21760/Desktop/M2/Computational Systems and Structural Biology/Bioinformatics of RNA and non-coding world/RNA_angles/RNA-project-angles/data/TrueAngles_TestBINAIRE/"
+train_data_folder = "../../DATA MODIFIED/OneHotMatrices_OutputTrain/"
+test_data_folder = "../../DATA MODIFIED/OneHotMatrices_OutputTest/"
+train_labels_folder = "../../DATA MODIFIED/TrueAngles_TrainBINAIRE/"
+test_labels_folder = "../../DATA MODIFIED/TrueAngles_TestBINAIRE/"
+
+#train_data_folder = "/Users/admin-21760/Desktop/M2/Computational Systems and Structural Biology/Bioinformatics of RNA and non-coding world/RNA_angles/RNA-project-angles/data/OneHotMatrices_OutputTrain/"
+#test_data_folder = "/Users/admin-21760/Desktop/M2/Computational Systems and Structural Biology/Bioinformatics of RNA and non-coding world/RNA_angles/RNA-project-angles/data/OneHotMatrices_OutputTest/"
+#train_labels_folder = "/Users/admin-21760/Desktop/M2/Computational Systems and Structural Biology/Bioinformatics of RNA and non-coding world/RNA_angles/RNA-project-angles/data/TrueAngles_TrainBINAIRE/"
+#test_labels_folder = "/Users/admin-21760/Desktop/M2/Computational Systems and Structural Biology/Bioinformatics of RNA and non-coding world/RNA_angles/RNA-project-angles/data/TrueAngles_TestBINAIRE/"
 
 train_files = glob.glob(os.path.join(train_data_folder, "*.npy"))
 test_files = glob.glob(os.path.join(test_data_folder, "*.npy"))
@@ -80,7 +81,9 @@ for test_file in test_files:
     test_x = scaler.transform(test_x)
     test_predictions = mlp_binary.predict(test_x)
 
-    output_file = os.path.join("/Users/admin-21760/Desktop/M2/Computational Systems and Structural Biology/Bioinformatics of RNA and non-coding world/RNA_angles/RNA-project-angles/data/Y_pred_binary/", f"{protein_name}_predictions.txt")
+    output_file = os.path.join("../../RESULTS/Y_pred_binary/", f"{protein_name}_predictions.txt")
+    
+    #output_file = os.path.join("/Users/admin-21760/Desktop/M2/Computational Systems and Structural Biology/Bioinformatics of RNA and non-coding world/RNA_angles/RNA-project-angles/data/Y_pred_binary/", f"{protein_name}_predictions.txt")
     np.savetxt(output_file, test_predictions, fmt='%d')
     all_test_predictions.append(test_predictions)
     test_y = np.loadtxt(test_label_file, dtype=int)
