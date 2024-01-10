@@ -1,9 +1,14 @@
 import os
 def calculate_mean(values):
     return sum(values) / len(values)
+    
+#alpha_folder = "../../RESULTS/Y_pred_binary"
+#reverse_folder = "../../RESULTS/MAE after training/Reverse_TestBinaireYPRED"
 
 alpha_folder = "Y_pred_binary"
 reverse_folder = "Reverse_TestBinaireYPRED"
+
+#mean_folder = "../../RESULTS/MAE after training/MeanBinary"
 
 mean_folder = "MeanBinary"
 for filename_alpha in os.listdir(alpha_folder):
