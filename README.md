@@ -20,4 +20,4 @@ contains the various results obtained : the predicted classes and angles, and th
 Folder SRC :
 contains the various programs of the workflow.
 
-This project was done in the context of the subject BIOINFORMATICS OF RNA by Jade COCHET, Marie CROQUET, Naëla GOURRI and Solène MANSOUR.
+*This project was done in the context of the subject BIOINFORMATICS OF RNA by **Jade COCHET**, **Marie CROQUET**, **Naëla GOURRI** and **Solène MANSOUR**.*
