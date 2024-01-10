@@ -3,7 +3,7 @@ def calculate_mean(values):
     return sum(values) / len(values)
 
 alpha_folder = "../../RESULTS/Y_pred_multi"
-reverse_folder = "../../RESULTS/MAE after training/Reverse_TestMultiYPRED"
+reverse_folder = "../../RESULTS/MAE before training/Reverse_TestMultiYPRED"
 
 #alpha_folder = "Y_pred_multi"
 #reverse_folder = "Reverse_TestMultiYPRED"
