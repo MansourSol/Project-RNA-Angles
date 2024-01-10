@@ -7,6 +7,12 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 from sklearn.preprocessing import StandardScaler
 
+#train_data_folder = "../../DATA MODIFIED/OneHotMatrices_OutputTrain/"
+#test_data_folder = "../../DATA MODIFIED/OneHotMatrices_OutputTest/"
+#train_labels_folder = "../../DATA MODIFIED/TrueAngles_TrainMULTI/"
+#test_labels_folder = "../../DATA MODIFIED/TrueAngles_TestMULTI/"
+
+
 train_data_folder = "/Users/admin-21760/Desktop/M2/Computational Systems and Structural Biology/Bioinformatics of RNA and non-coding world/RNA_angles/RNA-project-angles/data/OneHotMatrices_OutputTrain/"
 test_data_folder = "/Users/admin-21760/Desktop/M2/Computational Systems and Structural Biology/Bioinformatics of RNA and non-coding world/RNA_angles/RNA-project-angles/data/OneHotMatrices_OutputTest/"
 train_labels_folder = "/Users/admin-21760/Desktop/M2/Computational Systems and Structural Biology/Bioinformatics of RNA and non-coding world/RNA_angles/RNA-project-angles/data/TrueAngles_TrainMULTI/"
