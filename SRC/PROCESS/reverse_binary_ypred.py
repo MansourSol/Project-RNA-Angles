@@ -22,6 +22,9 @@ def process_file(input_file, output_folder):
         print(f"An error occurred: {e}")
 
 if __name__ == "__main__":
+    #input_file_path = "../../RESULTS/PREDICTION_SAMPLE/example_pred.txt" 
+    #output_folder_path = "../../RESULTS/PREDICTION_SAMPLE/Reverse_TestBinaireExample"
+    
     input_file_path = "/Users/admin-21760/Desktop/M2/Computational Systems and Structural Biology/Bioinformatics of RNA and non-coding world/RNA_angles/RNA-project-angles/data/sample/example_pred.txt"
     output_folder_path = "/Users/admin-21760/Desktop/M2/Computational Systems and Structural Biology/Bioinformatics of RNA and non-coding world/RNA_angles/RNA-project-angles/data/Reverse_TestBinaireExample"
 
