@@ -1,5 +1,5 @@
 input_folder_path = "../../DATA/TestSetAngles"
-output_folder_path = "../../DATA MODIFIED/AlphaAngles_OutputTest" wtf c'est pas possible !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+output_folder_path = "../../DATA MODIFIED/AlphaAngles_OutputTest" 
 
 #input_folder_path = "/Users/admin-21760/Desktop/M2/Computational Systems and Structural Biology/Bioinformatics of RNA and non-coding world/RNA_angles/RNA-project-angles/data/TestSetAngles"
 #output_folder_path = "/Users/admin-21760/Desktop/M2/Computational Systems and Structural Biology/Bioinformatics of RNA and non-coding world/RNA_angles/RNA-project-angles/data/AlphaAngles_OutputTest"
