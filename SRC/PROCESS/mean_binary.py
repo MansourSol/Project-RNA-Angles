@@ -6,7 +6,7 @@ def calculate_mean(values):
 alpha_folder = "../../DATA MODIFIED/Alpha_valueTest"
 reverse_folder = "../../RESULTS/MAE before training/Reverse_TestBinaire"
 
-#alpha_folder = "Y_pred_binary"
+#alpha_folder = "Alpha_valueTest"
 #reverse_folder = "Reverse_TestBinaireYPRED"
 
 mean_folder = "../../RESULTS/MAE after training/MeanBinary"
@@ -50,11 +50,11 @@ import os
 def calculate_mean(values):
     return sum(values) / len(values)
     
-alpha_folder = "../../RESULTS/Y_pred_binary"
-reverse_folder = "../../RESULTS/MAE after training/Reverse_TestBinaireYPRED"
+alpha_folder = "../../RESULTS/Alpha_valueTest"
+reverse_folder = "../../RESULTS/MAE after training/Reverse_TestBinaire"
 
-#alpha_folder = "Y_pred_binary"
-#reverse_folder = "Reverse_TestBinaireYPRED"
+#alpha_folder = "Alpha_valueTest"
+#reverse_folder = "Reverse_TestBinaire"
 
 mean_folder = "../../RESULTS/MAE after training/MeanBinary"
 
