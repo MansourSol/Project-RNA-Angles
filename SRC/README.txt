@@ -11,5 +11,3 @@ contains all the codes that were used for the pre-processing of the data :
 - The computation of the MAE for both classification type (binary/multiple)
 - The assignation of classes for both classification type (binary/multiple)
 - The codes that allow to tranfsorm the class predicted into the corresponding angle.
-
-There are two remaining files that 
