@@ -1,6 +1,6 @@
 # Project-RNA-Angles
 
-The goal of this project is to predict the alpha angles of an RNA sequence frolm a fasta file that will be returned in a json file.
+The goal of this project is to predict the alpha angles of an RNA sequence from a fasta file that will be returned in a json file.
 
 Inside this git project are multiple folders :
 - DATA
@@ -15,7 +15,7 @@ Folder DATA MODIFIED :
 contains all the intermediate files that are created along the workflow.
 
 Folder RESULTS :
-contains the various results obtained : the predicted classe and angles, and the MAE (mean absolute error).
+contains the various results obtained : the predicted classes and angles, and the MAE (mean absolute error).
 
 Folder SRC :
 contains the various programs of the workflow.
