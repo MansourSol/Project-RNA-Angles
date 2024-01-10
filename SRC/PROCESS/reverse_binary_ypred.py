@@ -27,8 +27,6 @@ if __name__ == "__main__":
     
     input_file_path = "/Users/admin-21760/Desktop/M2/Computational Systems and Structural Biology/Bioinformatics of RNA and non-coding world/RNA_angles/RNA-project-angles/data/sample/example_pred.txt"
     output_folder_path = "/Users/admin-21760/Desktop/M2/Computational Systems and Structural Biology/Bioinformatics of RNA and non-coding world/RNA_angles/RNA-project-angles/data/Reverse_TestBinaireExample"
-
-    # Create the output folder if it doesn't exist
     if not os.path.exists(output_folder_path):
         os.makedirs(output_folder_path)
 
