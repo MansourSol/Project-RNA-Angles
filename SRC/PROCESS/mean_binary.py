@@ -9,7 +9,7 @@ reverse_folder = "../../RESULTS/MAE before training/Reverse_TestBinaire"
 #alpha_folder = "Alpha_valueTest"
 #reverse_folder = "Reverse_TestBinaireYPRED"
 
-mean_folder = "../../RESULTS/MAE after training/MeanBinary"
+mean_folder = "../../RESULTS/MAE before training/MeanBinary"
 
 #mean_folder = "MeanBinary"
 for filename_alpha in os.listdir(alpha_folder):
