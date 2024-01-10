@@ -2,8 +2,13 @@ import os
 def calculate_mean(values):
     return sum(values) / len(values)
 
+#alpha_folder = "../../RESULTS/Y_pred_multi"
+#reverse_folder = "../../RESULTS/MAE after training/Reverse_TestMultiYPRED"
+
 alpha_folder = "Y_pred_multi"
 reverse_folder = "Reverse_TestMultiYPRED"
+
+#mean_folder = "../../RESULTS/MAE before training/MeanMulti"
 
 mean_folder = "MeanMulti"
 for filename_alpha in os.listdir(alpha_folder):
