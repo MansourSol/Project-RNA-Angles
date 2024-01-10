@@ -29,15 +29,11 @@ def traiter_fichier(chemin_fichier):
         print(f"Résultats pour le fichier {chemin_fichier}:")
         for resultat in resultats_padded:
             print(resultat)
-
-        # Créer le dossier de destination s'il n'existe pas
         #dossier_destination = "../../RESULTS/MAE after training/Reverse_TestMultiYPRED"
         
         dossier_destination = "/Users/admin-21760/Desktop/M2/Computational Systems and Structural Biology/Bioinformatics of RNA and non-coding world/RNA_angles/RNA-project-angles/data/Reverse_TestMultiYPRED"
         if not os.path.exists(dossier_destination):
             os.makedirs(dossier_destination)
-
-        # Écrire les résultats dans un nouveau fichier dans le dossier de destination
         nom_fichier = os.path.basename(chemin_fichier)
         chemin_destination = os.path.join(dossier_destination, nom_fichier)
 
@@ -53,18 +49,11 @@ def traiter_fichier(chemin_fichier):
         print(f"Une erreur s'est produite : {e}")
 
 if __name__ == "__main__":
-    # Dossier contenant les fichiers à traiter
     #dossier_a_traiter = "../../RESULTS/Y_pred_multi"
     
     dossier_a_traiter = "/Users/admin-21760/Desktop/M2/Computational Systems and Structural Biology/Bioinformatics of RNA and non-coding world/RNA_angles/RNA-project-angles/data/Y_pred_multi"
-
-    # Liste des fichiers dans le dossier
     fichiers_du_dossier = os.listdir(dossier_a_traiter)
-
-    # Filtrer les fichiers pour inclure uniquement les fichiers texte (par exemple, avec l'extension .txt)
     fichiers_texte = [fichier for fichier in fichiers_du_dossier if fichier.endswith(".txt")]
-
-    # Traitement de chaque fichier
     for fichier in fichiers_texte:
         chemin_absolu = os.path.join(dossier_a_traiter, fichier)
         traiter_fichier(chemin_absolu)
