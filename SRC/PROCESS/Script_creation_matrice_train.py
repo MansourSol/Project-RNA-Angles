@@ -1,3 +1,5 @@
+#input_folder_path = "../../DATA/TrainingSetAngles"
+#output_folder_path = "../../DATA MODIFIED/AlphaAngles_OutputTrain" wtf il existe pas !!!!!!!!!
 
 input_folder_path = "/Users/admin-21760/Desktop/M2/Computational Systems and Structural Biology/Bioinformatics of RNA and non-coding world/RNA_angles/RNA-project-angles/data/TrainingSetAngles"
 output_folder_path = "/Users/admin-21760/Desktop/M2/Computational Systems and Structural Biology/Bioinformatics of RNA and non-coding world/RNA_angles/RNA-project-angles/data/AlphaAngles_OutputTrain"
@@ -36,6 +38,9 @@ def sequence_to_one_hot(sequence, max_length):
 
     return one_hot_matrix
 
+#folder_path = "../../DATA MODIFIED/AlphaAngles_OutputTrain"
+#output_folder_path = "../../DATA MODIFIED/OneHotMatrices_OutputTrain"
+
 folder_path = "/Users/admin-21760/Desktop/M2/Computational Systems and Structural Biology/Bioinformatics of RNA and non-coding world/RNA_angles/RNA-project-angles/data/AlphaAngles_OutputTrain"
 output_folder_path = "/Users/admin-21760/Desktop/M2/Computational Systems and Structural Biology/Bioinformatics of RNA and non-coding world/RNA_angles/RNA-project-angles/data/OneHotMatrices_OutputTrain"
 
@@ -67,6 +72,8 @@ for filename in os.listdir(folder_path):
             np.save(output_filepath, one_hot_matrix)
 
             print(f"Matrice one-hot encoded pour {protein_name} dans {filename} enregistrée dans {output_filepath}")
+            
+#output_folder_path = "../../DATA MODIFIED/OneHotMatrices_OutputTrain"
 
 output_folder_path = "/Users/admin-21760/Desktop/M2/Computational Systems and Structural Biology/Bioinformatics of RNA and non-coding world/RNA_angles/RNA-project-angles/data/OneHotMatrices_OutputTrain"
 for filename in os.listdir(output_folder_path):
